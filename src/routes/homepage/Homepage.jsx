@@ -7,7 +7,9 @@ const Homepage = () => {
   const [typingStatus, setTypingStatus] = useState("human1");
   return (
     <div className='homepage'>
-      <img src="/orbital.png" alt="" className='orbital' />
+      <div className='orbital-container'>
+        <img src="/orbital.png" alt="" className='orbital' />
+      </div>
       <div className="left">
 
         <h1>Mars AI</h1>
@@ -27,7 +29,7 @@ const Homepage = () => {
           </div>
           <img src="/bot.png" alt="" className='bot' />
           <div className='chat'>
-            <img src={typingStatus === "human1" ? "/human1.jpeg" : typingStatus === "human2" ? "/human2.jpeg" : "/bot.png" } alt="" />
+            <img src={typingStatus === "human1" ? "/human1.jpeg" : typingStatus === "human2" ? "/human2.jpeg" : "/bot.png"} alt="" />
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
@@ -55,8 +57,16 @@ const Homepage = () => {
             />
           </div>
         </div>
-
       </div>
+      <div className='terms'>
+        <img src="/logo.png" alt="" />
+        <div className='links'>
+          <Link to="/">Terms of Service</Link>
+          <span>|</span>
+          <Link to="/">Privacy Policy</Link>
+        </div>
+      </div>
+
     </div>
   )
 }

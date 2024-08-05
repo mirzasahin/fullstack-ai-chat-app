@@ -1,6 +1,10 @@
 .chatPage{
     height: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
 
     .wrapper{
         flex: 1;

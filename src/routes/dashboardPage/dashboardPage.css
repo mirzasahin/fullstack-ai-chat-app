@@ -26,6 +26,7 @@
 
             h1 {
                 font-size: 64px;
+                font-weight: 800;
                 font-family: 'Montserrat';
                 background: linear-gradient(to right, #217bfe, #e55571);
                 background-clip: text;
